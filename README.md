@@ -9,7 +9,7 @@ make it easy for you make more efficient use of your time.
 How to use it:
 Clone this repo
 Install pyutogui (pip3 install pyautogui)
-run boring_trainingclicker.py from the terminal
+Run boring_trainingclicker.py from the terminal (python boringtrainingclicker.py)
 Follow the instructions
 
 
