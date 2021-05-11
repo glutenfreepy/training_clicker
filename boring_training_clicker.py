@@ -1,21 +1,25 @@
-# use pyautogui to click next every 10 seconds to get thru stupid lessons
-
-# dont for get to activate virtualenv
-
 import pyautogui
 
-# get mouse coordinates of the next button on the screen
-# prompt user to place the mouse on the next button
-# get mouse x and y coords with
-# pyautogui.position()
+# get mouse coordinates
+print("First we need to know where the 'Next' button of your video is.")
+print("Please hold your mouse over the 'Next' button of the boring video.")
+input("Press Enter when ready")
+
+# do a countdown here
+# 3
+# 2
+# 1
+mouse_loc = pyautogui.position()
+clicks = 1000
+interval = 10
+button = 'left'
 
 # send mouse to coordinates
-# pyautogui.moveTo(184, 787)
+pyautogui.moveTo(mouse_loc)
 
 # instead we can use click() to go to the coords before clicking
 # call click funtion to click next on the video and advance the lesson slide
-pyautogui.click(x=184, y=787, clicks=100, interval=10, button='left')
+pyautogui.click(clicks=clicks, interval=interval, button=button)
 
 print('pyautogui process is complete')
-
-
+#prompt to run again
