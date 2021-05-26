@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "Training Clicker"
+bundle = "com.trainingclicker"
+version = "0.0.1"
+url = "https://trainingclicker.com/trainingclicker"
+license = "GNU General Public License v2 (GPLv2)"
+author = 'Edmund Garcia'
+author_email = "glutenfreepy@gmail.com"
+
+[tool.briefcase.app.trainingclicker]
+formal_name = "Training Clicker"
+description = "Click the 'Next' button of your boring training repeatedly"
+icon = "src/trainingclicker/resources/trainingclicker"
+sources = ['src/trainingclicker']
+requires = []
+
+
+[tool.briefcase.app.trainingclicker.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.trainingclicker.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.trainingclicker.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.trainingclicker.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.trainingclicker.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]
