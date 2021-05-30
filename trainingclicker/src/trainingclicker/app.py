@@ -48,7 +48,9 @@ class TrainingClicker(toga.App):
         main_box.add(step_one_box)
         main_box.add(divider)
         main_box.add(coord_button)
-        # TODO: popup window, and display mouse coords
+        main_box.add(divider)
+
+        # TODO: display mouse coords
 
         self.main_window = toga.MainWindow(title=self.formal_name)
         self.main_window.content = main_box
